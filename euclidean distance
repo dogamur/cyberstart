@@ -1,0 +1,16 @@
+from cmath import sqrt
+
+x1=int(input("x axis of first coordinate: "))
+y1=int(input("y axis of first coordinate: "))
+x2=int(input("x axis of second coordinate: "))
+y2=int(input("y axis of sefcond coordinate: "))
+
+point1=(x1,y1)
+point2=(x2,y2)
+
+points=[point1,point2]
+
+def euclideanDistance(point1,point2):
+    return sqrt((point1[0]-point2[0])**2+(point1[1]-point2[1])**2)
+
+print(euclideanDistance(point1,point2))
